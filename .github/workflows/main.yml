@@ -24,6 +24,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          cd /var/pocketbase/pb_public
+          cd /var/www/sharedpoesy-dist
           git pull origin main
-          git status
